@@ -871,6 +871,8 @@ Un `.o` no es ejecutable por dos razones:
 2. Le falta la **infraestructura de inicio del proceso**: cuando el sistema operativo lanza un ejecutable, no llama directamente a `main()`. Antes ejecuta código de inicialización (`crt0`, "C Runtime 0") que configura el entorno de C (argumentos, variables de entorno, memoria), llama a `main()`, y luego llama a `exit()` con el valor retornado. Ese código lo aporta `libc` durante el enlazado.
 
 ---
+dsdfs
+
 
 **P12.** Intentá ejecutar `./programa.o` directamente. ¿Qué mensaje aparece?
 
